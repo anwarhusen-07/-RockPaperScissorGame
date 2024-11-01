@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Rubik+Wet+Paint&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: black;
+  justify-content: center;
+  color: white;
+}
+
+.score {
+  margin: auto 3vw;
+  justify-content: space-between;
+  display: flex;
+  font: 2em sans-serif;
+  color: rgb(0, 255, 255);
+}
+
+button {
+  border: none;
+  border-radius: 15%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 5vh;
+  text-align: left;
+  margin: auto 0;
+}
+
+button:disabled {
+  background-color: black;
+}
+
+.player-image img,
+.computer-image img {
+  padding: 0 0;
+  height: 20vh;
+  width: 11vw;
+  border-radius: 15%;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+.computer-image {
+  justify-content: space-between;
+  margin: 0vh auto 2rem auto;
+  display: flex;
+  text-align: center;
+  width: 90%;
+  flex-direction: row;
+  border-radius: 2rem;
+}
+.player-image {
+  justify-content: space-between;
+  margin: 0vh auto;
+  display: flex;
+  text-align: center;
+  width: 90%;
+  flex-direction: row;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#title {
+  font-family: "Rubik Wet Paint", cursive;
+  margin: 0vh auto;
+  font-size: 4vw;
+  color: white;
+}
+
+#head {
+  font-size: 3rem;
+  font-family: "Baloo Paaji 2", cursive;
+  color: white;
+}
+#reset {
+  background-color: #00f9d9;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-family: "Baloo Paaji 2", cursive;
+  color: black;
+  text-align: center;
+  letter-spacing: 3px;
+  border: 1px solid blue;
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+}
