@@ -4,45 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissor</title>
+    <link rel="icon" href="/images/icon5.webp" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="title">Rock✊🏻 Paper✋🏻 Scissor✌🏻</h1>
-    <div class="score">
-      <p>Player Score: <span id="player-score"></span></p>
-      <p><span id="head">Make your choice: Rock, Paper, or Scissor</span></p>
-      <p>Computer Score: <span id="computer-score"></span></p>
+    <h1>Rock✊🏻 Paper✋🏻 Scissor✌🏻</h1>
+
+    <h3 class="h3display"></h3>
+    <div class="game-content">
+      <h3>Choose!</h3>
+
+      <div class="main-container">
+        <div>
+          <div class="img-container">
+            <button class="rock">
+              <img src="/images/rock-up.png" alt="rock-up" class="img" />
+            </button>
+          </div>
+          <span>ROCK</span>
+        </div>
+        <div>
+          <div class="img-container">
+            <button class="paper">
+              <img src="/images/paper-up1.png" alt="paper-up" class="img" />
+            </button>
+          </div>
+          <span>PAPER</span>
+        </div>
+        <div>
+          <div class="img-container">
+            <button class="scissor">
+              <img src="/images/scissor-up.png" alt="scissor-up" class="img" />
+            </button>
+          </div>
+          <span>SCISSOR</span>
+        </div>
+      </div>
     </div>
+    <img src="/images/rock-left.png" alt="rock-left" class="left-img" />
 
-    <div class="player-image">
-      <h3><pre>Player  :</pre></h3>
-      <button id="rock">
-        <img src="rock.png" alt="rock hand" class="image" />
-      </button>
-      <button id="paper">
-        <img src="paper.png" alt="paper hand" class="image" />
-      </button>
-      <button id="scissor">
-        <img src="scissors.png" alt="scissor hand" class="image" />
-      </button>
+    <img src="/images/rock-right.png" alt="rock-right" class="right-img" />
+
+    <pre>WIN= <span id="win">0</span> | LOST= <span id="lost">0</span>| DRAW=<span id="draw">0</span></Pre>
+    <div class="replay-container">
+      <button id="replay">Replay!</button>
     </div>
-
-    <div class="computer-image">
-      <h3>Computer:</h3>
-      <button id="Crock">
-        <img src="rock.png" alt="rock hand" class="image" />
-      </button>
-      <button id="Cpaper">
-        <img src="paper.png" alt="paper hand" class="image" />
-      </button>
-      <button id="Cscissor">
-        <img src="scissors.png" alt="scissor hand" class="image" />
-      </button>
-    </div>
-
-    <h1 id="choosing"></h1>
-
-    <p><span id="reset">Reset</span></p>
+    <audio id="win-sound" src="/images/mw1.wav" preload="auto"></audio>
+    <audio id="loss-sound" src="/images/ml1.wav" preload="auto"></audio>
+    <audio id="draw-sound" src="/images/md1.wav" preload="auto"></audio>
+    <div id="stars-container"></div>
 
     <script src="script.js"></script>
   </body>
