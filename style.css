@@ -98,7 +98,7 @@ button {
   width: 200px;
   display: none;
   font-size: 24px;
-  bottom: 5vh;
+  bottom: 10vh;
 }
 
 .h3display {
@@ -114,13 +114,12 @@ span {
 
 pre {
   text-align: right;
-  margin: 2rem 0rem;
   font-family: "Baloo Paaji 2";
   font-weight: bold;
   font-size: 2.5rem;
   color: #4f6090;
   position: fixed;
-  bottom: 10vh;
+  bottom: 15vh;
   left: 40vw;
 }
 .game-content {
@@ -312,7 +311,7 @@ pre {
 
   pre {
     font-size: 20px;
-    bottom: 10vh;
+    bottom: 15vh;
     text-align: center;
     left: 19vw;
   }
@@ -437,7 +436,6 @@ pre {
   pre {
     font-size: 12rem;
     right: 16rem;
-    bottom: 22rem;
   }
   #win,
   #lost,
