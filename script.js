@@ -19,6 +19,17 @@ let winCount, lostCount, drawCount;
 winCount = 0;
 lostCount = 0;
 drawCount = 0;
+leftImage.onload = () => {
+  const leftImgElement = document.querySelector(".left-img");
+  leftImgElement.src = leftImage.src;
+  leftImgElement.style.display = "block";
+};
+
+rightImage.onload = () => {
+  const rightImgElement = document.querySelector(".right-img");
+  rightImgElement.src = rightImage.src;
+  rightImgElement.style.display = "block";
+};
 
 rock.addEventListener("click", () => {
   navigator.vibrate(100);
