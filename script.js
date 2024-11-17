@@ -19,7 +19,7 @@ let winCount, lostCount, drawCount;
 winCount = 0;
 lostCount = 0;
 drawCount = 0;
-// Create Image objects for each choice (left side)
+
 const rockLeftImage = new Image();
 rockLeftImage.src = "/images/rock-left.png";
 
@@ -29,7 +29,7 @@ paperLeftImage.src = "/images/paper-left.png";
 const scissorLeftImage = new Image();
 scissorLeftImage.src = "/images/scissor-left.png";
 
-// Create Image objects for each choice (right side)
+
 const rockRightImage = new Image();
 rockRightImage.src = "/images/rock-right.png";
 
