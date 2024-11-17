@@ -19,22 +19,57 @@ let winCount, lostCount, drawCount;
 winCount = 0;
 lostCount = 0;
 drawCount = 0;
-const leftImage = new Image();
-leftImage.src = "/images/rock-left.png";
+// Create Image objects for each choice (left side)
+const rockLeftImage = new Image();
+rockLeftImage.src = "/images/rock-left.png";
 
-const rightImage = new Image();
-rightImage.src = "/images/rock-right.png";
-leftImage.onload = () => {
+const paperLeftImage = new Image();
+paperLeftImage.src = "/images/paper-left.png";
+
+const scissorLeftImage = new Image();
+scissorLeftImage.src = "/images/scissor-left.png";
+
+// Create Image objects for each choice (right side)
+const rockRightImage = new Image();
+rockRightImage.src = "/images/rock-right.png";
+
+const paperRightImage = new Image();
+paperRightImage.src = "/images/paper-right.png";
+
+const scissorRightImage = new Image();
+scissorRightImage.src = "/images/scissor-right.png";
+
+
+rockLeftImage.onload = () => {
   const leftImgElement = document.querySelector(".left-img");
-  leftImgElement.src = leftImage.src;
-  leftImgElement.style.display = "block";
+  leftImgElement.src = rockLeftImage.src;
 };
 
-rightImage.onload = () => {
-  const rightImgElement = document.querySelector(".right-img");
-  rightImgElement.src = rightImage.src;
-  rightImgElement.style.display = "block";
+paperLeftImage.onload = () => {
+  const leftImgElement = document.querySelector(".left-img");
+  leftImgElement.src = paperLeftImage.src;
 };
+
+scissorLeftImage.onload = () => {
+  const leftImgElement = document.querySelector(".left-img");
+  leftImgElement.src = scissorLeftImage.src;
+};
+
+rockRightImage.onload = () => {
+  const rightImgElement = document.querySelector(".right-img");
+  rightImgElement.src = rockRightImage.src;
+};
+
+paperRightImage.onload = () => {
+  const rightImgElement = document.querySelector(".right-img");
+  rightImgElement.src = paperRightImage.src;
+};
+
+scissorRightImage.onload = () => {
+  const rightImgElement = document.querySelector(".right-img");
+  rightImgElement.src = scissorRightImage.src;
+};
+
 
 rock.addEventListener("click", () => {
   navigator.vibrate(100);
