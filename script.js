@@ -19,6 +19,11 @@ let winCount, lostCount, drawCount;
 winCount = 0;
 lostCount = 0;
 drawCount = 0;
+const leftImage = new Image();
+leftImage.src = "/images/rock-left.png";
+
+const rightImage = new Image();
+rightImage.src = "/images/rock-right.png";
 leftImage.onload = () => {
   const leftImgElement = document.querySelector(".left-img");
   leftImgElement.src = leftImage.src;
